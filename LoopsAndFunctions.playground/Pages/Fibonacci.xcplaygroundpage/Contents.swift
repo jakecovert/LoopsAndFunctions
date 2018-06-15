@@ -4,7 +4,26 @@
  Write a function that takes an integer called `n`. The function should return the _nth_ number in the Fibonacci sequence. Each number in the Fibonacci sequence is calculated by adding the previous two numbers together. The sequence always starts with 1, 1. For example, the first ten numbers in the Fibonacci sequence are: `1, 1, 2, 3, 5, 8, 13, 21, 34, 55`. So, if you called your function with an argument of `6`, it should return 8. Call your function with several different values for `n` and verify that it returns the correct numbers.
  
  */
+func fibannci(until n : Int) {
+    
+    print(0)
+    print(1)
+    
+    var num1:Int = 0
+    var num2:Int = 1
+    
+    for _ in 0...n {
+        
+        let fibnum = num1 + num2
+        print(fibnum)
+        
+        num1 = num2
+        num2 = fibnum
+    }
+    
+}
 
+fibannci(until: 5)
 
 
 /*:
